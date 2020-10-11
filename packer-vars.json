@@ -1,0 +1,4 @@
+{
+    "source-ami": "ami-0817d428a6fb68645",
+    "ssh_username": "ubuntu"
+}
