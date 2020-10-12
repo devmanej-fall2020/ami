@@ -5,7 +5,7 @@
         "aws_region": "{{env `AWS_DEFAULT_REGION`}}",
         "source_ami": "{{env `AWS_SOURCE_AMI`}}",
         "ssh_username": "ubuntu",
-        "prod_account_id" :"{{env `AWS_PROD_ACCOUNT_ID`}}"
+        "prod_account_id": "{{env `AWS_PROD_ACCOUNT_ID`}}"
     },
     "builders": [
         {
