@@ -1,4 +1,4 @@
-# ami
+# Creation of an Amazon Machine Image using Packer
 
 Instructions for using Packer
 
