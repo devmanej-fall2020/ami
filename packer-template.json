@@ -4,7 +4,8 @@
         "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
         "aws_region": "{{env `AWS_DEFAULT_REGION`}}",
         "source_ami": "{{env `AWS_SOURCE_AMI`}}",
-        "ssh_username": "ubuntu"
+        "ssh_username": "ubuntu",
+        "prod_account_id" :"{{env `AWS_PROD_ACCOUNT_ID`}}"
     },
     "builders": [
         {
@@ -17,6 +18,7 @@
             "ssh_username": "{{user `ssh_username`}}",
             "vpc_id": "vpc-7e02c203",
             "ami_name": "csye6225_{{timestamp}}",
+            "ami_users": ["{{user `prod_account_id`}}"],
             "ami_description": "Ubuntu AMI for CSYE 6225 - Fall 2020",
             "launch_block_device_mappings": [
                 {
