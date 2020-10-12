@@ -1,8 +1,7 @@
 name: Run packer build
 
 on:
-  pull_request_target:
-    types: [opened,reopened]
+  pull_request:
     branches:
         - 'main'
 jobs:
