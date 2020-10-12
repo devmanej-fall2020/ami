@@ -20,3 +20,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: us-east-1
           AWS_SOURCE_AMI: ${{ secrets.AWS_SOURCE_AMI }}
+          AWS_PROD_ACCOUNT_ID: ${{ secrets.AWS_PROD_ACCOUNT_ID }}
