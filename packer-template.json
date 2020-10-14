@@ -5,7 +5,7 @@
         "aws_region": "",
         "source_ami": "ami-0817d428a6fb68645",
         "ssh_username": "ubuntu",
-        "prod_account_id" :""
+        "prod_account_id": ""
     },
     "builders": [
         {

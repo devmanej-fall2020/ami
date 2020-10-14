@@ -4,6 +4,6 @@
     "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
     "source-ami": "ami-0817d428a6fb68645",
     "ssh_username": "ubuntu",
-    "prod_account_id" :"822478464205"
+    "prod_account_id": "822478464205"
 
 }
