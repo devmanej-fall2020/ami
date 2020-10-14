@@ -1,11 +1,11 @@
 {
     "variables": {
-        "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
-        "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
-        "aws_region": "{{env `AWS_DEFAULT_REGION`}}",
-        "source_ami": "{{env `AWS_SOURCE_AMI`}}",
+        "aws_access_key": "",
+        "aws_secret_key": "",
+        "aws_region": "",
+        "source_ami": "ami-0817d428a6fb68645",
         "ssh_username": "ubuntu",
-        "prod_account_id": "{{env `AWS_PROD_ACCOUNT_ID`}}"
+        "prod_account_id" :""
     },
     "builders": [
         {
