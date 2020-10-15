@@ -5,7 +5,9 @@
         "aws_region": "",
         "source_ami": "ami-0817d428a6fb68645",
         "ssh_username": "ubuntu",
-        "prod_account_id": ""
+        "prod_account_id": "",
+        "vpc_id": "",
+        "subnet_id": ""
     },
     "builders": [
         {
@@ -16,8 +18,8 @@
             "instance_type": "t2.micro",
             "source_ami": "{{user `source_ami`}}",
             "ssh_username": "{{user `ssh_username`}}",
-            "vpc_id": "vpc-7e02c203",
-            "subnet_id": "subnet-1703b248",
+            "vpc_id": "{{user `vpc_id`}}",
+            "subnet_id": "{{user `subnet_id`}}",
             "ami_name": "csye6225_{{timestamp}}",
             "ami_users": ["{{user `prod_account_id`}}"],
             "ami_description": "Ubuntu AMI for CSYE 6225 - Fall 2020",
